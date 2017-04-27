@@ -16,7 +16,7 @@ function convert_roster_format (nestedArray) {
   for(let i = 0; i < roster.length; i++) {
     arr[i] = {}
   }
-
+  // console.log(arr)
   for(let j = 0; j < roster.length; j++) {
     let objectAssigned = arr[j];
     for(let k = 0; k < roster[0].length; k++) {
