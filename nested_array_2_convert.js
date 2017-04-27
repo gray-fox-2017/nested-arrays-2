@@ -37,7 +37,7 @@ console.log(object_roster[2])
 
 console.log(object_roster[0]['Name'] == 'Joe Schmo') // outputs true
 
-console.log(object_roster);
+console.log(Object.keys(object_roster[2]).length);
 
 module.exports = {
   convert_roster_format
