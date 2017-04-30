@@ -19,9 +19,8 @@ function convert_roster_format (nestedArray) {
           obj[nestedArray[0][0]] = nestedArray[i][0];
           obj[nestedArray[0][1]] = nestedArray[i][1];
           obj[nestedArray[0][2]] = nestedArray[i][2];
-          obj[nestedArray[0][3]] = nestedArray[i][3];
-          arr.push(obj);
-      }
+          obj[nestedArry[0][3]] = nestedArray[i][3];
+          arr.push(obj);}
 
   return arr;
 }
