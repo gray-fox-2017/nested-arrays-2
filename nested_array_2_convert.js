@@ -13,7 +13,7 @@ let roster = [
 
 function convert_roster_format (nestedArray) {
   let hasil = [];
-  for(let i=1; i<nestedArray.length-1; i++){
+  for(let i=1; i<nestedArray.length; i++){
     let tampung = {};
     for(let j=0; j<nestedArray[i].length; j++){
       tampung[nestedArray[0][j]]=nestedArray[i][j];
@@ -27,7 +27,6 @@ function convert_roster_format (nestedArray) {
 let object_roster = convert_roster_format(roster)
 console.log(object_roster);
 console.log(object_roster[2])
-
 // => { "Number": 31, "Name": "Harvey Kay", "Position": "Shooting Guard", "Points per Game": [0, 30, 16, 0, 25] }
 
 console.log(object_roster[0]['Name'] == 'Joe Schmo') // outputs true
