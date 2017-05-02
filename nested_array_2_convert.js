@@ -15,13 +15,11 @@ function convert_roster_format (nestedArray) {
   // your convert code here
   var obj = [];
   for(let j = 1; j < nestedArray.length; j++){
-    var targetObj = {
-      "Number" : nestedArray[j][0],
-      "Name" : nestedArray[j][1],
-      "Position" : nestedArray[j][2],
-      "Point per Game" : nestedArray[j][3]
-    }
-    obj.push(targetObj);
+    var targetObj = {}
+    for (var i = 0; i < nestedArray[j].length; i++) {
+    targetObj[nestedArray[0][i]] = nestedArray[j][i];
+
+  }obj.push(targetObj);
   }
   return obj;
 }
