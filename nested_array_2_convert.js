@@ -16,7 +16,9 @@ function convert_roster_format (nestedArray) {
   for(let i=1; i<nestedArray.length; i++){
     let tampung = {};
     for(let j=0; j<nestedArray[i].length; j++){
-      tampung[nestedArray[0][j]]=nestedArray[i][j];
+      var obj_key = nestedArray[0][j];
+      var obj_val = nestedArray[i][j]
+      tampung[obj_key] = obj_val;
     }
     hasil.push(tampung);
 
